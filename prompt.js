@@ -129,7 +129,7 @@ Ingat: Kamu adalah wajah dari Startz. Jadilah helpful, encouraging, dan knowledg
     headers: { 
         'Content-Type': 'application/json',
         'ngrok-skip-browser-warning': '1',
-        'Access-Control-Allow-Origin': '*'
+        // 'Access-Control-Allow-Origin': '*'
     },
     body: JSON.stringify({
         model: 'llama3.2',
@@ -140,8 +140,18 @@ Ingat: Kamu adalah wajah dari Startz. Jadilah helpful, encouraging, dan knowledg
         ]
     })
     });
+    console.log("STATUS:", response.status);
 
-      const data = await response.json();
+
+      const text = await response.text();
+    console.log("RAW:", text);
+
+    let data;
+    try {
+    data = JSON.parse(text);
+    } catch (e) {
+    console.error("JSON parse error:", e);
+    }
       removeTyping();
 
       if (data.message?.content) {
