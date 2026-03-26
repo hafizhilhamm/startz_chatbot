@@ -127,8 +127,8 @@ Ingat: Kamu adalah wajah dari Startz. Jadilah helpful, encouraging, dan knowledg
     const response = await fetch('https://1913-2404-c0-5c10-00-405c-daa2.ngrok-free.app/api/chat', {
     method: 'POST',
     headers: { 
-        'Content-Type': 'application/json',
-        'ngrok-skip-browser-warning': '1',
+        'Content-Type': 'application/json'
+        // 'ngrok-skip-browser-warning': '1',
         // 'Access-Control-Allow-Origin': '*'
     },
     body: JSON.stringify({
