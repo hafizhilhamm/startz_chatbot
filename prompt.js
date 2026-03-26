@@ -124,7 +124,7 @@ Ingat: Kamu adalah wajah dari Startz. Jadilah helpful, encouraging, dan knowledg
     showTyping();
 
     try {
-       const response = await fetch('https://1adf-2404-c0-5c10-00-405c-daa2.ngrok-free.app/api/chat', {
+       const response = await fetch('https://1913-2404-c0-5c10-00-405c-daa2.ngrok-free.app/api/chat', {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json',
