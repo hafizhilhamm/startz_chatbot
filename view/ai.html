@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startz AI Advisor</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="icon" type="image/png" href="../img/favicon.ico" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="main" class="nav-logo">
+    <img src="../img/logo.png" alt="logo">
+  </a>
+  <div class="nav-divider"></div>
+  <span class="nav-title">AI Career Advisor</span>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    Online · llama3.2
+  </div>
+  <a href="index.html" class="back-btn">
+    ← Kembali
+  </a>
+</nav>
+
+<!-- APP -->
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-label">Topik Populer</div>
+
+    <button class="topic-btn" onclick="sendQuick('Apa itu Startz dan bagaimana cara kerjanya?')">
+      <span class="topic-emoji">🚀</span>
+      <div class="topic-text">
+        <span class="topic-title">Tentang Startz</span>
+        <span class="topic-sub">Kenali platform ini</span>
+      </div>
+    </button>
+
+    <button class="topic-btn" onclick="sendQuick('Bagaimana cara membuat career roadmap di Startz?')">
+      <span class="topic-emoji">🗺️</span>
+      <div class="topic-text">
+        <span class="topic-title">Career Roadmap</span>
+        <span class="topic-sub">Rencanakan kariermu</span>
+      </div>
+    </button>
+
+    <button class="topic-btn" onclick="sendQuick('Kelas apa saja yang tersedia di Startz?')">
+      <span class="topic-emoji">🎓</span>
+      <div class="topic-text">
+        <span class="topic-title">Kelas & Bootcamp</span>
+        <span class="topic-sub">Eksplorasi kurikulum</span>
+      </div>
+    </button>
+
+    <button class="topic-btn" onclick="sendQuick('Bagaimana cara mencari internship di Startz?')">
+      <span class="topic-emoji">💼</span>
+      <div class="topic-text">
+        <span class="topic-title">Internship</span>
+        <span class="topic-sub">Cari peluang magang</span>
+      </div>
+    </button>
+
+    <button class="topic-btn" onclick="sendQuick('Bagaimana cara menjadi instruktur dan membuat kelas di Startz?')">
+      <span class="topic-emoji">✍️</span>
+      <div class="topic-text">
+        <span class="topic-title">Buat Kelas</span>
+        <span class="topic-sub">Jadi instruktur</span>
+      </div>
+    </button>
+
+    <button class="topic-btn" onclick="sendQuick('Apa itu token Startz dan cara menggunakannya?')">
+      <span class="topic-emoji">⚡</span>
+      <div class="topic-text">
+        <span class="topic-title">Token Startz</span>
+        <span class="topic-sub">Sistem kredit platform</span>
+      </div>
+    </button>
+
+    <button class="topic-btn" onclick="sendQuick('Bagaimana fitur mentoring 1-on-1 di Startz?')">
+      <span class="topic-emoji">🤝</span>
+      <div class="topic-text">
+        <span class="topic-title">Mentoring 1-on-1</span>
+        <span class="topic-sub">Konsultasi personal</span>
+      </div>
+    </button>
+
+    <div class="sidebar-divider"></div>
+
+    <div class="ai-info-card">
+      <h4>🤖 AI Career Advisor</h4>
+      <p>Asisten karier yang memahami kebutuhan mahasiswa & fresh graduate Indonesia.</p>
+      <div class="powered-badge">⚡ Powered by Ollama · llama3.2</div>
+    </div>
+  </aside>
+
+  <!-- CHAT -->
+  <div class="chat-area">
+    <div class="messages" id="messages">
+      <div class="welcome" id="welcome">
+        <div class="welcome-icon">🤖</div>
+        <h2>Halo! Saya <em>AI Advisor</em><br>Startz.</h2>
+        <p>Tanya apa saja tentang Startz, career planning, internship, kelas, atau cara memulai karier impianmu. Saya siap bantu 24/7!</p>
+        <div class="quick-grid">
+          <button class="qs-btn" onclick="sendQuick('Apa itu Startz?')">
+            🚀 Apa itu Startz?
+            <span>Kenali platform karier ini</span>
+          </button>
+          <button class="qs-btn" onclick="sendQuick('Fitur unggulan apa saja di Startz?')">
+            ⭐ Fitur unggulan
+            <span>Discover semua fitur</span>
+          </button>
+          <button class="qs-btn" onclick="sendQuick('Cara daftar dan mulai di Startz?')">
+            📋 Cara mulai
+            <span>Onboarding dalam 5 menit</span>
+          </button>
+          <button class="qs-btn" onclick="sendQuick('Berapa harga dan token di Startz?')">
+            ⚡ Harga & token
+            <span>Free & premium options</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <div class="input-row">
+        <textarea
+          id="userInput"
+          rows="1"
+          placeholder="Tanya soal Startz, karier, internship..."
+          onkeydown="handleKey(event)"
+          oninput="autoResize(this)"
+        ></textarea>
+        <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+      <p class="input-hint">Enter untuk kirim &nbsp;·&nbsp; Shift+Enter baris baru</p>
+    </div>
+  </div>
+</div>
+
+<script src="../js/prompt.js"></script>
+
+</body>
+</html>

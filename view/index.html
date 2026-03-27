@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startz — Your Way Up Starts Here</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/index.css" />
+<link rel="icon" type="image/png" href="../img/favicon.ico" />
+</head>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <a href="main" class="nav-logo">
+    <img src="../img/logo.png" alt="logo">
+  </a>
+
+  <div class="nav-search">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" placeholder="Cari di Startz...">
+  </div>
+
+  <div class="nav-items">
+    <a href="#" class="nav-item active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      Beranda
+    </a>
+    <a href="#" class="nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Jaringan
+    </a>
+    <a href="#" class="nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      Internship
+    </a>
+    <a href="#" class="nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.09 12c-.98-2.76-1.5-5.68-1.5-8.69A2 2 0 0 1 4.77 1.3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.29 6.29l1.06-1.06a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Pesan
+    </a>
+    <a href="#" class="nav-item nav-notif">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      <span class="notif-badge">3</span>
+      Notifikasi
+    </a>
+    <a href="#" class="nav-item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      Lebih
+    </a>
+  </div>
+
+  <div class="nav-right">
+    <button class="btn-premium">✦ Startz Pro</button>
+  </div>
+</nav>
+
+<!-- ─── MAIN LAYOUT ─── -->
+<div class="layout">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar-left">
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-banner"></div>
+      <div class="profile-info">
+        <div class="profile-avatar">R</div>
+        <div class="profile-name">Ramzy Sultan</div>
+        <div class="profile-role">Founder & CEO · Startz · Mahasiswa ITB</div>
+        <div class="profile-divider"></div>
+        <div class="profile-stat">
+          <span class="profile-stat-label">Pengunjung profil</span>
+          <span class="profile-stat-val">128</span>
+        </div>
+        <div class="profile-stat">
+          <span class="profile-stat-label">Koneksi</span>
+          <span class="profile-stat-val">240+</span>
+        </div>
+        <div class="profile-stat">
+          <span class="profile-stat-label">Career Score</span>
+          <span class="profile-stat-val">⚡ 74 / 100</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nav Menu -->
+    <div class="menu-card">
+      <a href="#" class="menu-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        Internship
+        <span class="badge">12 baru</span>
+      </a>
+      <a href="#" class="menu-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        Kelas & Bootcamp
+      </a>
+      <a href="#" class="menu-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+        Mentoring 1-on-1
+      </a>
+      <a href="#" class="menu-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        CV & Portofolio
+      </a>
+      <a href="#" class="menu-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Webinar & Event
+      </a>
+      <a href="#" class="menu-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Sertifikasi
+        <span class="badge">Baru</span>
+      </a>
+    </div>
+
+    <!-- Career Roadmap -->
+    <div class="roadmap-card">
+      <div class="roadmap-title">🗺️ Career Roadmap</div>
+      <div class="roadmap-step">
+        <div class="step-dot done">✓</div>
+        <div class="step-text"><strong>Self Assessment</strong><br>Sudah selesai</div>
+      </div>
+      <div class="roadmap-step">
+        <div class="step-dot done">✓</div>
+        <div class="step-text"><strong>Skill Building</strong><br>3/5 kelas selesai</div>
+      </div>
+      <div class="roadmap-step">
+        <div class="step-dot active">→</div>
+        <div class="step-text"><strong>Cari Internship</strong><br>Sedang berjalan</div>
+      </div>
+      <div class="roadmap-step">
+        <div class="step-dot todo">4</div>
+        <div class="step-text"><strong>Bangun Portfolio</strong></div>
+      </div>
+      <div class="roadmap-step" style="margin-bottom:0">
+        <div class="step-dot todo">5</div>
+        <div class="step-text"><strong>Launch Karier 🚀</strong></div>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- CENTER FEED -->
+  <main class="feed">
+
+    <!-- Composer -->
+    <div class="composer">
+      <div class="composer-top">
+        <div class="composer-avatar">R</div>
+        <div class="composer-input">Bagikan pencapaian atau insight kariermu...</div>
+      </div>
+      <div class="composer-actions">
+        <button class="composer-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><rect x="2" y="2" width="20" height="20" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Foto
+        </button>
+        <button class="composer-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          Video
+        </button>
+        <button class="composer-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          Artikel
+        </button>
+        <button class="composer-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Event
+        </button>
+      </div>
+    </div>
+
+    <!-- POST 1 - Career Win -->
+    <div class="post">
+      <div class="post-header">
+        <div class="post-avatar" style="background:linear-gradient(135deg,#1a56db,#3b82f6)">R</div>
+        <div class="post-user">
+          <div class="post-name">
+            Rizky Aditya
+            <div class="verified">✓</div>
+          </div>
+          <div class="post-role">Frontend Developer · Tokopedia · Alumni Startz 🎓</div>
+          <div class="post-time">2 jam lalu · 🌐</div>
+        </div>
+        <button class="post-menu">···</button>
+      </div>
+      <div class="post-body">
+        Setelah 6 bulan journey di Startz — dari nol hingga dapat <strong>offer pertama sebagai Frontend Dev di Tokopedia</strong>! 🎉<br><br>
+        Kunci suksesnya: ikuti career roadmap, selesaikan semua kelas yang direkomendasi, dan aktif di komunitas. Career Advisor AI-nya juga sangat membantu waktu saya bingung harus mulai dari mana.<br><br>
+        Buat yang masih struggle — <span class="hashtag">#YourWayUpStartsHere</span> itu nyata!
+      </div>
+      <div class="post-tags">
+        <span class="post-tag tag-blue">#FreshGraduate</span>
+        <span class="post-tag tag-gold">#CareerWin</span>
+        <span class="post-tag tag-green">#Frontend</span>
+      </div>
+      <div class="post-stats">
+        <span>❤️ 248 &nbsp;·&nbsp; 34 komentar &nbsp;·&nbsp; 12 dibagikan</span>
+      </div>
+      <div class="post-divider"></div>
+      <div class="post-actions">
+        <button class="post-action" onclick="toggleLike(this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Suka
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Komentar
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          Repost
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Kirim
+        </button>
+      </div>
+    </div>
+
+    <!-- POST 2 - Internship -->
+    <div class="post">
+      <div class="post-header">
+        <div class="post-avatar" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">S</div>
+        <div class="post-user">
+          <div class="post-name">Sarah Maharani</div>
+          <div class="post-role">Product Manager Intern · Gojek · Startz Learner</div>
+          <div class="post-time">5 jam lalu · 🌐</div>
+        </div>
+        <button class="post-menu">···</button>
+      </div>
+      <div class="post-body">
+        Baru aja dapet <strong>internship PM di Gojek</strong> lewat fitur Internship Matching di Startz! 🚀<br><br>
+        Tips: lengkapi career roadmap dulu, baru apply. Algoritma matching-nya bakal kasih rekomendasi yang jauh lebih relevan sama skill dan target karier kamu.
+      </div>
+      <div class="post-tags">
+        <span class="post-tag tag-blue">#Internship</span>
+        <span class="post-tag tag-gold">#ProductManager</span>
+      </div>
+      <div class="post-stats"><span>❤️ 187 &nbsp;·&nbsp; 21 komentar</span></div>
+      <div class="post-divider"></div>
+      <div class="post-actions">
+        <button class="post-action" onclick="toggleLike(this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Suka
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Komentar
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          Repost
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Kirim
+        </button>
+      </div>
+    </div>
+
+    <!-- POST 3 - AI Advisor -->
+    <div class="post">
+      <div class="post-header">
+        <div class="post-avatar" style="background:linear-gradient(135deg,#0d9488,#34d399)">D</div>
+        <div class="post-user">
+          <div class="post-name">Dian Permata</div>
+          <div class="post-role">Data Analyst · Bank BCA · Alumni Startz</div>
+          <div class="post-time">1 hari lalu · 🌐</div>
+        </div>
+        <button class="post-menu">···</button>
+      </div>
+      <div class="post-body">
+        Nanya ke <strong>AI Career Advisor Startz</strong> soal pindah dari akuntansi ke data analyst.<br><br>
+        Langsung dikasih roadmap detail: Excel → SQL → Python → Tableau → portfolio project. Semuanya ada kelasnya di platform. Seriously, ini kayak punya career counselor pribadi! 🤖✨
+      </div>
+      <div class="post-tags">
+        <span class="post-tag tag-green">#CareerSwitch</span>
+        <span class="post-tag tag-blue">#DataAnalyst</span>
+        <span class="post-tag tag-gold">#AIAdvisor</span>
+      </div>
+      <div class="post-stats"><span>❤️ 143 &nbsp;·&nbsp; 18 komentar</span></div>
+      <div class="post-divider"></div>
+      <div class="post-actions">
+        <button class="post-action" onclick="toggleLike(this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Suka
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Komentar
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          Repost
+        </button>
+        <button class="post-action">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Kirim
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="sidebar-right">
+
+    <!-- Internship Recommendations -->
+    <div class="widget">
+      <div class="widget-title">
+        💼 Internship Untukmu
+        <a href="#">Lihat semua</a>
+      </div>
+      <div class="job-card">
+        <div class="job-logo">🏢</div>
+        <div>
+          <div class="job-title">Product Intern</div>
+          <div class="job-company">Gojek · Jakarta</div>
+          <span class="job-tag">Match 94%</span>
+        </div>
+      </div>
+      <div class="job-card">
+        <div class="job-logo">🛒</div>
+        <div>
+          <div class="job-title">Frontend Intern</div>
+          <div class="job-company">Tokopedia · Remote</div>
+          <span class="job-tag">Match 88%</span>
+        </div>
+      </div>
+      <div class="job-card">
+        <div class="job-logo">💳</div>
+        <div>
+          <div class="job-title">Data Intern</div>
+          <div class="job-company">OVO · Hybrid</div>
+          <span class="job-tag">Match 81%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- People you may know -->
+    <div class="widget">
+      <div class="widget-title">
+        👥 Mungkin Kamu Kenal
+        <a href="#">Lihat semua</a>
+      </div>
+      <div class="people-card">
+        <div class="people-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">A</div>
+        <div>
+          <div class="people-name">Aldi Firmansyah</div>
+          <div class="people-role">UX Designer · Shopee</div>
+        </div>
+        <button class="btn-connect" onclick="toggleConnect(this)">+ Hubungkan</button>
+      </div>
+      <div class="people-card">
+        <div class="people-avatar" style="background:linear-gradient(135deg,#0d9488,#3b82f6)">N</div>
+        <div>
+          <div class="people-name">Nina Kurniasari</div>
+          <div class="people-role">Business Analyst · OVO</div>
+        </div>
+        <button class="btn-connect" onclick="toggleConnect(this)">+ Hubungkan</button>
+      </div>
+      <div class="people-card">
+        <div class="people-avatar" style="background:linear-gradient(135deg,#7c3aed,#1a56db)">B</div>
+        <div>
+          <div class="people-name">Budi Santoso</div>
+          <div class="people-role">Backend Dev · Shopee</div>
+        </div>
+        <button class="btn-connect" onclick="toggleConnect(this)">+ Hubungkan</button>
+      </div>
+    </div>
+
+    <!-- Token Balance -->
+    <div class="widget">
+      <div class="widget-title">⚡ Token Startz</div>
+      <div style="text-align:center; padding: 8px 0 16px;">
+        <div style="font-family:'Fraunces',serif; font-size:2.8rem; font-weight:700; color:var(--gold); line-height:1;">240</div>
+        <div style="font-size:.78rem; color:var(--white-60); margin-top:4px;">Token tersisa</div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:14px;">
+        <div style="display:flex; justify-content:space-between; font-size:.78rem;">
+          <span style="color:var(--white-60)">Mentoring 1-on-1</span>
+          <span style="color:var(--white)">50 token</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:.78rem;">
+          <span style="color:var(--white-60)">Review CV AI</span>
+          <span style="color:var(--white)">20 token</span>
+        </div>
+        <div style="display:flex; justify-content:space-between; font-size:.78rem;">
+          <span style="color:var(--white-60)">Akses Kelas</span>
+          <span style="color:var(--white)">30 token</span>
+        </div>
+      </div>
+      <button style="width:100%; background:linear-gradient(135deg,var(--gold),#f0a500); color:#000; font-weight:700; font-size:.82rem; padding:10px; border-radius:10px; border:none; cursor:pointer; font-family:'Plus Jakarta Sans',sans-serif; transition:transform .15s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        + Beli Token
+      </button>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ─── FLOATING AI ADVISOR ─── -->
+<div class="float-ai">
+  <a href="ai.html" class="float-ai-btn">
+    <div class="float-pulse"></div>
+    🤖 Tanya AI Advisor
+  </a>
+</div>
+
+<script>
+  function toggleLike(btn) {
+    btn.classList.toggle('liked');
+    if (btn.classList.contains('liked')) {
+      btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="#f87171" stroke="#f87171" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Disukai`;
+    } else {
+      btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Suka`;
+    }
+  }
+
+  function toggleConnect(btn) {
+    if (btn.classList.contains('connected')) {
+      btn.classList.remove('connected');
+      btn.textContent = '+ Hubungkan';
+    } else {
+      btn.classList.add('connected');
+      btn.textContent = '✓ Terhubung';
+    }
+  }
+</script>
+
+</body>
+</html>
